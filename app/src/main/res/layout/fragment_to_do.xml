@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:scrollbarThumbVertical="@drawable/scrollbar_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingEnd="20dp"
+        android:background="@color/yellow"
+        tools:ignore="RtlSymmetry">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Science"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:translationX="-400dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="SCIENCE"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:letterSpacing="0.5"
+                android:textStyle="bold"
+                android:background="@color/purple_500"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Science_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="210dp"
+                android:layout_marginBottom="16dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/sci"
+                android:contentDescription="@string/science"
+                android:scaleType="fitCenter">
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Math"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:translationX="-400dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="MATHEMATICS"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:letterSpacing="0.5"
+                android:textStyle="bold"
+                android:background="@color/purple_500"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Math_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="210dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/math"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/math">
+            </androidx.appcompat.widget.AppCompatButton>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/History"
+            android:translationX="-400dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="HISTORY"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:letterSpacing="0.5"
+                android:textStyle="bold"
+                android:background="@color/purple_500"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/History_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="210dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/his"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/history">
+            </androidx.appcompat.widget.AppCompatButton>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/Literature"
+            android:translationX="-400dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="LITERATURE AND ARTS"
+                    android:fontFamily="sans-serif"
+                    android:textSize="17dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:letterSpacing="0.5"
+                    android:textStyle="bold"
+                    android:background="@color/purple_500"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Literature_Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/lit"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/literatureandarts">
+            </androidx.appcompat.widget.AppCompatButton>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+
+</ScrollView>
+

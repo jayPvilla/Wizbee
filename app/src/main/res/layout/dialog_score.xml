@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- res/layout/dialog_score.xml -->
+
+    <nl.dionsegijn.konfetti.xml.KonfettiView
+        android:id="@+id/konfettiView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:translationZ="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/dialogLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/bee"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/dissapointed_bee"/>
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="Your Score:" />
+
+        <TextView
+            android:id="@+id/textViewScoreValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center" />
+
+        <Button
+        android:id="@+id/buttonRestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restart Quiz"
+        android:textColor="@android:color/white"
+        android:background="@color/white"
+        android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:textColor="@android:color/white"
+            android:background="@color/white"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

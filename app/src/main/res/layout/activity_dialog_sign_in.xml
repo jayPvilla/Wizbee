@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/honey"
+    android:id="@+id/signindialog"
+    tools:context=".SignInActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WIZBEE"
+        android:fontFamily="@font/aladin"
+        android:textColor="@color/yellow"
+        android:textSize="60sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:translationZ="10dp"/>
+
+    <ImageView
+        android:id="@+id/logo_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/lumilipad"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:translationY="110dp"
+        android:translationX="-300dp"
+        android:translationZ="10dp"
+        android:src="@drawable/flyingbee" />
+
+    <LinearLayout
+        android:layout_marginTop="270dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="262dp">\
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="SIGN IN TO CONTINUE"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/purple_500"
+            android:textColorHint="@color/purple_500"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/purple"
+            android:padding="15dp"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:letterSpacing="0.1"
+            android:text="Not Registered? \n Sign Up!"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

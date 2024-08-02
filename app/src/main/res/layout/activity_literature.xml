@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    tools:context=".Literature">
+
+    <ImageView
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/literature_background"
+        android:scaleType="fitXY" />
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:src="@drawable/arrow_back">
+    </ImageButton>
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:text="Score"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="10dp" />
+    <ImageView
+        android:id="@+id/lumilipad"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="250dp"
+        android:translationX="-300dp"
+        android:translationZ="10dp"
+        android:src="@drawable/loading_talbog_bee" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:padding="16sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="4dp"
+                android:textStyle="normal"
+                android:text="LITERATURE"
+                android:layout_gravity="center"
+                android:letterSpacing="0.3"
+                android:background="@color/pink"
+                android:textAlignment="center"
+                android:textColor="@color/dark_pink"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/literatureQuestionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_pink"
+                android:layout_marginBottom="120dp"
+                android:fontFamily="@font/aladin"
+                android:padding="4dp"
+                android:text="Question1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option1Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="option1"
+                android:textSize="16sp"
+                android:background="@color/dark_pink"
+                android:textColor="@color/white">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option2Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="option1"
+                android:textSize="16sp"
+                android:background="@color/dark_pink"
+                android:textColor="@color/white">
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/option3Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="option1"
+                android:textSize="16sp"
+                android:background="@color/dark_pink"
+                android:textColor="@color/white">
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/pink"
+        android:textSize="250sp"
+        android:translationZ="0dp"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_alignParentTop="true"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:progressDrawable="@drawable/custom_progress_bar"/>
+
+</RelativeLayout>

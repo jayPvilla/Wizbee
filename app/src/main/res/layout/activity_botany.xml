@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    tools:context=".Botany">
+
+    <ImageView
+        android:id="@+id/backgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/botany_background"
+        android:scaleType="fitXY" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/botanyQuestionText"
+            android:layout_width="match_parent"
+            android:background="@color/pink"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:text="Question1"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginHorizontal="17dp">
+        </TextView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/option1Button"
+                android:src="@drawable/dc"
+                android:layout_width="140dp"
+                android:layout_marginLeft="20dp"
+                android:foregroundGravity="center"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/pink"
+                android:text="option1"
+                android:textSize="16sp"
+                android:scaleType="fitXY"
+                android:textColor="@color/white">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/option2Button"
+                android:src="@drawable/mj"
+                android:layout_width="140dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/pink"
+                android:layout_marginBottom="8dp"
+                android:text="option1"
+                android:textSize="16sp"
+                android:scaleType="fitXY"
+                android:textColor="@color/white">
+            </ImageButton>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <ImageButton
+            android:id="@+id/option3Button"
+            android:src="@drawable/cj"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/pink"
+            android:text="option1"
+            android:textSize="16sp"
+            android:scaleType="fitXY"
+            android:textColor="@color/white"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <nl.dionsegijn.konfetti.xml.KonfettiView
+        android:id="@+id/konfettiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

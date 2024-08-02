@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_dialog_form -->
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/honey">
+
+    <LinearLayout
+        android:translationZ="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/purple_500">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/purple_500"
+            android:src="@drawable/arrow_back">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/developers"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="20dp"
+            android:text="DEVELOPERS"
+            android:textSize="20sp"
+            android:background="@color/purple_500" />
+        <ImageView
+            android:id="@+id/dialog_logo"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pagod_bee"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:translationY="650dp"
+                android:layout_width="match_parent"
+                android:id="@+id/mj_layout"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/purple_500"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="50dp">
+                <ImageView
+                    android:id="@+id/duenas"
+                    android:background="@drawable/mj"
+                    android:layout_width="150dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/mark_jones" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/yellow">
+
+                    <TextView
+                        android:id="@+id/markjones"
+                        android:text="Mark Jones Duenas"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:fontFamily="serif-monospace"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/mj_section"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="italic"
+                        android:text="BET-COET-3A"/>
+                    <TextView
+                        android:id="@+id/mj_quote"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/purple_500"
+                        android:fontFamily="cursive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hindi ko na nadiligan ang binhi ng iyong pagmamahal"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:translationY="650dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/dc_layout"
+                android:background="@color/purple_500"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="50dp">
+                <ImageView
+                    android:id="@+id/fajardo"
+                    android:background="@drawable/dc"
+                    android:layout_width="150dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/mark_jones" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/yellow">
+
+                    <TextView
+                        android:id="@+id/dianeclaire"
+                        android:text="Diane Claire Fajardo"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="serif-monospace"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/dc_section"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="BET-COET-3A"
+                        android:textSize="10dp"
+                        android:textStyle="italic" />
+                    <TextView
+                        android:id="@+id/dc_quote"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/purple_500"
+                        android:fontFamily="cursive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Love no matter what."/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:translationY="650dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/cj_layout"
+                android:background="@color/purple_500"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="50dp">
+                <ImageView
+                    android:id="@+id/panila"
+                    android:background="@drawable/cj"
+                    android:layout_width="150dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/mark_jones" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/yellow">
+
+                    <TextView
+                        android:id="@+id/carlosjake"
+                        android:layout_gravity="center"
+                        android:text="Carlos Jake Panila"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="serif-monospace"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/cj_section"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="BET-COET-3A"
+                        android:textSize="10dp"
+                        android:textStyle="italic"/>
+                    <TextView
+                        android:id="@+id/cj_quote"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/purple_500"
+                        android:fontFamily="cursive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ako'y mabait na tao..."/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:translationY="650dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/jp_layout"
+                android:background="@color/purple_500"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="50dp">
+                <ImageView
+                    android:id="@+id/villanueva"
+                    android:background="@drawable/jp"
+                    android:layout_width="150dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="John Paul" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/yellow">
+
+                    <TextView
+                        android:id="@+id/johnpaul"
+                        android:layout_gravity="center"
+                        android:text="John Paul Villanueva"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="serif-monospace"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/jp_section"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="BET-COET-3A"
+                        android:textSize="10dp"
+                        android:textStyle="italic"/>
+                    <TextView
+                        android:id="@+id/jp_quote"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:textColor="@color/purple_500"
+                        android:fontFamily="cursive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Di pinapansin, ingay sa tabi, magulong kapaligiran, sayo lang ang tingin."/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/intro_gif"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/broken_bee"
+        android:translationY="20dp"
+        android:layout_gravity="center"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

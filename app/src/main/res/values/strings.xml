@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WIZBEE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wizbee">WIZBEE</string>
+    <string name="todo">TODO</string>
+    <string name="sci">Science</string>
+    <string name="beeburger">beeburger</string>
+    <string name="science">Science</string>
+    <string name="math">Math</string>
+    <string name="history">History</string>
+    <string name="literatureandarts">Literature and Arts</string>
+    <string name="usericon">Usericon</string>
+    <string name="floatingbutton">Float</string>
+    <string name="mark_jones">Mark Jones Duenas</string>
+    <string name="diane_claire">Diane Claire Fajardo</string>
+    <string name="carlos_jake">Carlos Jake Panila</string>
+    <string name="john_paul">John Paul Villanueva</string>
+
+</resources>

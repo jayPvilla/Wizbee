@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "866323770141",
+    "firebase_url": "https://act14otentication-default-rtdb.firebaseio.com",
+    "project_id": "act14otentication",
+    "storage_bucket": "act14otentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866323770141:android:db4c4b5b4c1764be0a4ff4",
+        "android_client_info": {
+          "package_name": "com.example.betlog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrW32NddvcarMljZoBflZPmkoNmJfDQsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866323770141:android:1088738270ae27740a4ff4",
+        "android_client_info": {
+          "package_name": "com.example.projectwizbee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrW32NddvcarMljZoBflZPmkoNmJfDQsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    android:backgroundTint="#FF9800"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/sideBar"
+        android:layout_width="170sp"
+        android:layout_height="match_parent"
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        android:translationX="-220dp"
+        android:translationZ="5dp">
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:id="@+id/backbtn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_500"
+            android:src="@drawable/arrow_back">
+
+        </ImageButton>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sideBar_logo"
+            android:padding="5dp"
+            android:backgroundTintMode="@color/yellow"
+            app:civ_border_color="@color/yellow"
+            app:civ_border_width="1dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bee"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/username"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.1"
+            android:textColor="@color/yellow"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="your_email"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:layout_width="169dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/yellow">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBJECTS:"
+                android:textColor="@color/purple_500"
+                android:paddingHorizontal="10dp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/sideBarScience"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:textStyle="bold"
+                android:text="SCIENCE"
+                android:padding="17dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+            <Button
+                android:id="@+id/sideBarMath"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:textStyle="bold"
+                android:text="MATH"
+                android:padding="17dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+            <Button
+                android:id="@+id/sideBarHistory"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:textStyle="bold"
+                android:text="HISTORY"
+                android:padding="17dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+            <Button
+                android:id="@+id/sideBarLiterature"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:textStyle="bold"
+                android:text="LITERATURE AND ARTS"
+                android:textSize="15dp"
+                android:padding="17dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+            <Button
+                android:id="@+id/sideBarBotany"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:textStyle="bold"
+                android:text="PHILPPINE BOTANY"
+                android:padding="17dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SignOut"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:background="@color/yellow"
+            android:textColor="@color/purple_700"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="15dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/purple_500"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/openSideBar"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/beeburger"
+                android:contentDescription="@string/beeburger" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:letterSpacing="0.05"
+                android:paddingTop="5dp"
+                android:text=" WIZBEE"
+                android:textColor="@color/yellow"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView9"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="0dp"
+                android:src="@drawable/flyingbee" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/imageView8"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/purple_500"
+                android:contentDescription="@string/usericon"
+                android:padding="0.5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bee" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="#FFFF00">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ToDoBtn"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/yellow"
+                android:text="EASY"
+                android:textColor="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/RecentStudiesBtn"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
+                android:text="HARD"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarLayout"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/floatingbutton"
+        android:onClick="ShowDialog"
+        android:src="@drawable/pleasing_bee">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <nl.dionsegijn.konfetti.xml.KonfettiView
+        android:id="@+id/konfettiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationZ="10dp"/>
+
+</RelativeLayout>
+
